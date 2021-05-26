@@ -1,18 +1,18 @@
 {
-  "name": "cripto-art-br-api",
+  "name": "expo2021-back",
   "private": true,
   "version": "1.0.0",
-  "description": "CriptoArtBR API",
+  "description": "expo2021 API",
   "scripts": {
     "develop": "strapi develop",
     "start": "strapi start",
     "build": "strapi build",
     "strapi": "strapi",
     "production": "NODE_ENV=production strapi start",
-    "pm2-homolog-start": "NODE_ENV=staging pm2 -f start server.js --name criptoArtBR-api",
-    "pm2-homolog-reload": "NODE_ENV=staging pm2 -f reload server.js --name criptoArtBR-api",
-    "pm2-prod-start": "NODE_ENV=production pm2 -f start server.js --name criptoArtBR-api",
-    "pm2-prod-reload": "NODE_ENV=production pm2 -f reload server.js --name criptoArtBR-api"
+    "pm2-homolog-start": "NODE_ENV=staging pm2 -f start server.js --name expo2021-back",
+    "pm2-homolog-reload": "NODE_ENV=staging pm2 -f reload server.js --name expo2021-back",
+    "pm2-prod-start": "NODE_ENV=production pm2 -f start server.js --name expo2021-back",
+    "pm2-prod-reload": "NODE_ENV=production pm2 -f reload server.js --name expo2021-back"
   },
   "devDependencies": {},
   "dependencies": {
@@ -28,11 +28,11 @@
     "strapi-connector-mongoose": "3.6.2"
   },
   "author": {
-    "name": "CriptoArtBR"
+    "name": "CriptoArtBr"
   },
   "engines": {
     "node": ">=10.16.0 <=14.x.x",
     "npm": "^6.0.0"
   },
-  "license": "ISIC"
+  "license": "MIT"
 }
