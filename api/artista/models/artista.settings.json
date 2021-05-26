@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "artistas",
+  "info": {
+    "name": "Artista",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nomeartistico": {
+      "type": "string"
+    },
+    "cidade": {
+      "type": "string"
+    },
+    "Links": {
+      "type": "component",
+      "repeatable": false,
+      "component": "links.links"
+    },
+    "minibio": {
+      "type": "richtext"
+    },
+    "video": {
+      "type": "string"
+    }
+  }
+}

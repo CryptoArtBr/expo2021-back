@@ -1,0 +1,38 @@
+{
+  "name": "cripto-art-br-api",
+  "private": true,
+  "version": "1.0.0",
+  "description": "CriptoArtBR API",
+  "scripts": {
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi",
+    "production": "NODE_ENV=production strapi start",
+    "pm2-homolog-start": "NODE_ENV=staging pm2 -f start server.js --name criptoArtBR-api",
+    "pm2-homolog-reload": "NODE_ENV=staging pm2 -f reload server.js --name criptoArtBR-api",
+    "pm2-prod-start": "NODE_ENV=production pm2 -f start server.js --name criptoArtBR-api",
+    "pm2-prod-reload": "NODE_ENV=production pm2 -f reload server.js --name criptoArtBR-api"
+  },
+  "devDependencies": {},
+  "dependencies": {
+    "strapi": "3.6.2",
+    "strapi-admin": "3.6.2",
+    "strapi-utils": "3.6.2",
+    "strapi-plugin-content-type-builder": "3.6.2",
+    "strapi-plugin-content-manager": "3.6.2",
+    "strapi-plugin-users-permissions": "3.6.2",
+    "strapi-plugin-email": "3.6.2",
+    "strapi-plugin-upload": "3.6.2",
+    "strapi-plugin-i18n": "3.6.2",
+    "strapi-connector-mongoose": "3.6.2"
+  },
+  "author": {
+    "name": "CriptoArtBR"
+  },
+  "engines": {
+    "node": ">=10.16.0 <=14.x.x",
+    "npm": "^6.0.0"
+  },
+  "license": "ISIC"
+}
