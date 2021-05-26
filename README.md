@@ -1,3 +1,17 @@
-# Strapi application
+# Expo2021-Backend
+#### Requirements 
+- MongoDB
+- Strapi
+- Nginx
 
-A quick description of your strapi application
+```sh
+yarn install
+```
+
+```sh
+yarn develop
+```
+Production Mode
+```sh
+yarn run production
+```
