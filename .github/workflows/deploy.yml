@@ -1,0 +1,23 @@
+name: Deploy
+
+# Controls when the action will run. 
+on:
+  # Triggers the workflow on push or pull request events but only for the production branch
+  push:
+    branches: [ production ]
+  pull_request:
+    branches: [ production ]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+jobs:
+    deploy_production:
+        runs-on: criptoArtBR
+        steps:
+            - run: echo "Deploy to Production"
+            - run: yarn install
+            - run: NODE_ENV=production yarn build
+            - run: yarn global add pm2
+            - run: yarn run pm2-prod-start
+            - run: pm2 save
