@@ -15,9 +15,10 @@ jobs:
     deploy_production:
         runs-on: criptoArtBR
         steps:
-            - run: echo "Deploy to Production"
-            - run: yarn install
-            - run: NODE_ENV=production npm run build
-            - run: yarn global add pm2
-            - run: npm run pm2-prod-start
-            - run: pm2 save
+          - uses: actions/checkout@v2
+          - run: echo "Deploy to Production"
+          - run: yarn install
+          - run: NODE_ENV=production npm run build
+          - run: yarn global add pm2
+          - run: npm run pm2-prod-start
+          - run: pm2 save
