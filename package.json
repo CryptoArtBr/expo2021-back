@@ -2,7 +2,7 @@
   "name": "expo2021-back",
   "private": true,
   "version": "1.0.0",
-  "description": "expo2021 API",
+  "description": "Comunidade brasileira de crypto-artistas",
   "scripts": {
     "develop": "strapi develop",
     "start": "strapi start",
@@ -29,6 +29,10 @@
   },
   "author": {
     "name": "CriptoArtBr"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CryptoArtBr/expo2021-back.git"
   },
   "engines": {
     "node": ">=10.16.0 <=14.x.x",
