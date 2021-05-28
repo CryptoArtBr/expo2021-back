@@ -6,13 +6,13 @@
   },
   "options": {},
   "attributes": {
-    "instagram": {
+    "Instagram": {
+      "type": "string"
+    },
+    "Twitter": {
       "type": "string"
     },
     "website": {
-      "type": "string"
-    },
-    "twitter": {
       "type": "string"
     }
   }
