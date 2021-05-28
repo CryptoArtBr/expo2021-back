@@ -20,5 +20,5 @@ jobs:
           - run: yarn install
           - run: NODE_ENV=production npm run build
           - run: yarn global add pm2
-          - run: npm run pm2-prod-start
+          - run: npm run pm2-prod-reload
           - run: pm2 save
