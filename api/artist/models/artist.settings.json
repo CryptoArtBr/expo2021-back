@@ -26,7 +26,7 @@
     "minibio": {
       "type": "richtext"
     },
-    "VideoPresentation": {
+    "videoPresentation": {
       "type": "string"
     }
   }
