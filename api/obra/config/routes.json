@@ -2,48 +2,48 @@
   "routes": [
     {
       "method": "GET",
-      "path": "/artists",
-      "handler": "artist.find",
+      "path": "/obras",
+      "handler": "obra.find",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/artists/count",
-      "handler": "artist.count",
+      "path": "/obras/count",
+      "handler": "obra.count",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/artists/:id",
-      "handler": "artist.findOne",
+      "path": "/obras/:id",
+      "handler": "obra.findOne",
       "config": {
         "policies": []
       }
     },
     {
       "method": "POST",
-      "path": "/artists",
-      "handler": "artist.create",
+      "path": "/obras",
+      "handler": "obra.create",
       "config": {
         "policies": []
       }
     },
     {
       "method": "PUT",
-      "path": "/artists/:id",
-      "handler": "artist.update",
+      "path": "/obras/:id",
+      "handler": "obra.update",
       "config": {
         "policies": []
       }
     },
     {
       "method": "DELETE",
-      "path": "/artists/:id",
-      "handler": "artist.delete",
+      "path": "/obras/:id",
+      "handler": "obra.delete",
       "config": {
         "policies": []
       }

@@ -1,0 +1,55 @@
+{
+  "kind": "collectionType",
+  "collectionName": "obras",
+  "info": {
+    "name": "Obra"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "titulo": {
+      "type": "string"
+    },
+    "descricao": {
+      "type": "string"
+    },
+    "midia": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files",
+        "images",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "linkLoja": {
+      "type": "string"
+    },
+    "thumbnail": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "videoApresentacao": {
+      "type": "string"
+    },
+    "aceite": {
+      "type": "string"
+    },
+    "categoria": {
+      "type": "string"
+    }
+  }
+}
