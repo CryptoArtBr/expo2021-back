@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "colecaos",
+  "info": {
+    "name": "Colecao"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "titulo": {
+      "type": "string"
+    },
+    "textoCuratorial": {
+      "type": "richtext"
+    },
+    "nomeCurador": {
+      "type": "string"
+    },
+    "obraDestaque": {
+      "type": "boolean"
+    },
+    "websiteColecao": {
+      "type": "string"
+    },
+    "linkMetaverso": {
+      "type": "string"
+    },
+    "leilao": {
+      "type": "datetime"
+    },
+    "categorias": {
+      "type": "string"
+    }
+  }
+}

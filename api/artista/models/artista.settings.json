@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "artists",
+  "collectionName": "artistas",
   "info": {
-    "name": "artist",
+    "name": "Artista",
     "description": ""
   },
   "options": {
@@ -12,21 +12,24 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "artisticName": {
+    "nomeArtistico": {
       "type": "string"
     },
-    "city": {
+    "cidade": {
       "type": "string"
     },
     "links": {
       "type": "component",
-      "repeatable": false,
+      "repeatable": true,
       "component": "links.links"
+    },
+    "atuacao": {
+      "type": "string"
     },
     "minibio": {
       "type": "richtext"
     },
-    "videoPresentation": {
+    "videoApresentacao": {
       "type": "string"
     }
   }
